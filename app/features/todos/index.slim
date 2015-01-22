@@ -1,0 +1,6 @@
+ion-view title="Todos"
+  ion-content
+    ion-list
+      ion-item.item.item-icon-right ng-repeat="todo in todos" ui-sref="app.todos.show({todo: $index})"
+        span ng-class="{done: todo.done}" {{todo.title}}
+        i.icon.ion-ios7-arrow-right

@@ -1,0 +1,9 @@
+ion-view title="Todo"
+  ion-content
+    .item
+      p  {{todo.title}}
+    .item.item-checkbox
+      div
+        label.checkbox
+          input ng-model="todo.done" type="checkbox" /
+        | Done
